@@ -204,23 +204,6 @@
     <footer>
         © 2026 Solodeveloperidn
     </footer>
-     <section class="problem reveal">
-     <script>
-const reveals = document.querySelectorAll(".reveal");
-
-function revealOnScroll() {
-    reveals.forEach(el => {
-        const windowHeight = window.innerHeight;
-        const elementTop = el.getBoundingClientRect().top;
-
-        if (elementTop < windowHeight - 100) {
-            el.classList.add("active");
-        }
-    });
-}
-
-window.addEventListener("scroll", revealOnScroll);
-</script>
 
 </body>
 </html>
