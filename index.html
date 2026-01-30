@@ -6,6 +6,39 @@
     <title>Landing Page Profesional | 300 Ribu</title>
 
     <style>
+        .faq-item {
+    border-bottom: 1px solid #333;
+    padding: 15px 0;
+}
+
+.faq-question {
+    cursor: pointer;
+    font-weight: bold;
+    position: relative;
+}
+
+.faq-question::after {
+    content: "+";
+    position: absolute;
+    right: 0;
+    transition: transform 0.3s;
+}
+
+.faq-item.active .faq-question::after {
+    content: "-";
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    opacity: 0.8;
+    margin-top: 10px;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 200px; /* cukup buat jawaban */
+}
          .reveal {
     opacity: 0;
     transform: translateY(40px);
@@ -179,21 +212,35 @@
 
         <!-- FAQ -->
         <section class="faq reveal">
-            <h2>Pertanyaan Umum</h2>
+    <h2>Pertanyaan Umum</h2>
 
-            <div class="box">
-                <p><strong>Q: Beneran cuma 300 ribu?</strong><br>
-                A: Iya. Fokus landing page simpel, efektif, dan cepat.</p>
+    <div class="faq-item">
+        <div class="faq-question">
+            Q: Beneran cuma 300 ribu?
+        </div>
+        <div class="faq-answer">
+            Iya. Fokus landing page simpel, efektif, dan cepat.
+        </div>
+    </div>
 
-                <p><strong>Q: Bisa custom?</strong><br>
-                A: Bisa, selama masih masuk akal dan bukan bikin marketplace.</p>
+    <div class="faq-item">
+        <div class="faq-question">
+            Q: Bisa custom?
+        </div>
+        <div class="faq-answer">
+            Bisa, selama masih masuk akal dan bukan bikin marketplace.
+        </div>
+    </div>
 
-                <p><strong>Q: Berapa lama jadi?</strong><br>
-                A: Rata-rata cepat, tergantung kelengkapan data.</p>
+    <div class="faq-item">
+        <div class="faq-question">
+            Q: Berapa lama jadi?
+        </div>
+        <div class="faq-answer">
+            Rata-rata cepat, tergantung kelengkapan data.
+        </div>
+    </div>
 
-                <p><strong>Q: Bisa dipakai buat iklan?</strong><br>
-                A: Justru itu tujuannya.</p>
-            </div>
         </section>
 
     </div>
@@ -230,5 +277,16 @@ function revealOnScroll() {
 
 window.addEventListener("scroll", revealOnScroll);
             </script>
+   <script>
+const faqItems = document.querySelectorAll(".faq-item");
+
+faqItems.forEach(item => {
+    const question = item.querySelector(".faq-question");
+
+    question.addEventListener("click", () => {
+        item.classList.toggle("active");
+    });
+});
+</script> 
 </body>
 </html>
