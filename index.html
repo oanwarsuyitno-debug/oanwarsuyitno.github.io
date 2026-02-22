@@ -1,318 +1,276 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta name="google-site-verification" content="UwHxqK4EhdJNh5s5zH4Xf2F0wZoQNNFRsIuOkllVOrE" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page UMKM Profesional | 300 Ribu</title>
-
-    <style>
-        .image-box img {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  display: block;
-}
-       .cta {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    padding: 15px 30px;
-    background: #00ff9c;
-    color: #000;
-    font-weight: bold;
-    border-radius: 6px;
-    text-decoration: none;
-    transition: all 0.3s ease;
+  <meta name="google-site-verification" content="UwHxqK4EhdJNh5s5zH4Xf2F0wZoQNNFRsIuOkllVOrE" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+   Jasa Landingpage Pro
+  </title>
+  <style>
+  .section {
+  transition: all 0.8s ease;
 }
 
-.cta-arrow {
-    display: inline-block;
-    transition: transform 0.3s ease;
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
 }
 
-/* HOVER EFFECT */
-.cta:hover {
-    transform: translateY(-2px);
+.show {
+  opacity: 1;
+  transform: translateY(0);
 }
-
-.cta:hover .cta-arrow {
-    transform: rotate(90deg);
-} 
-        .faq-item {
-    border-bottom: 1px solid #333;
-    padding: 15px 0;
-}
-
-.faq-question {
-    cursor: pointer;
-    font-weight: bold;
-    position: relative;
-}
-
-.faq-question::after {
-    content: "+";
-    position: absolute;
-    right: 0;
-    transition: transform 0.3s;
-}
-
-.faq-item.active .faq-question::after {
-    content: "-";
-}
-
-.faq-answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease;
-    opacity: 0.8;
-    margin-top: 10px;
-}
-
-.faq-item.active .faq-answer {
-    max-height: 200px; /* cukup buat jawaban */
-}
-         .reveal {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: all 0.6s ease;
-}
-
-.reveal.active {
-    opacity: 1;
-    transform: translateY(0);
-}
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #0f0f0f;
-            color: #ffffff;
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 40px 20px;
-        }
-
-        h1, h2, h3 {
-            line-height: 1.3;
-        }
-
-        .hero {
-            text-align: center;
-            padding: 80px 20px;
-        }
-
-        .hero h1 {
-            font-size: 2.4rem;
-        }
-
-        .price {
-            color: #00ff9c;
-            font-weight: bold;
-            font-size: 1.3rem;
-            margin: 15px 0;
-        }
-
-        .cta {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 15px 30px;
-            background: #00ff9c;
-            color: #000;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 6px;
-        }
-
-        .features, .problem, .target, .faq {
-            margin-top: 60px;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 10px;
-        }
-
-        .box {
-            background: #1a1a1a;
-            padding: 30px;
-            border-radius: 10px;
-            margin-top: 30px;
-        }
-
-        .final-cta {
-            text-align: center;
-            padding: 80px 20px;
-            background: #00ff9c;
-            color: #000;
-            margin-top: 80px;
-        }
-
-        .final-cta a {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 15px 30px;
-            background: #000;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: bold;
-        }
-
-        footer {
-            text-align: center;
-            font-size: 0.9rem;
-            opacity: 0.7;
-            padding: 30px;
-        }
-    </style>
-</head>
-<body>
-
-    <!-- HERO -->
-    <section class="hero">
-        <h1>Naikkan Omset Bisnis-mu Hingga 100x Lipat Dengan Landing Page</h1>
-        <p class="price">Hanya 100 Ribu — Langsung Online</p>
-        <p>
-            <div class="image-box">
-  <img src="img/images.png" alt="Foto Produk">
-</div>
-            Cocok untuk UMKM, Pebisnis, Konten Kreator & Freelancer<br>
-            Mau jualan, promosi, atau bangun personal brand — tanpa ribet & tanpa mahal
-        </p>
-
-        <a href="https://wa.me/6285624261831?text=Halo%20saya%20tertarik%20pesan%20landing%20page%20100%20ribu" 
-   class="cta" target="_blank">
+    body {
+      margin: 0;
+      font-family: Arial, Sans-Serif;
+      background: #0f0f0f;
+      color: #ffff;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    h1, h2, h3 {
+      line-height: 1.5;
+    }
+    .hero {
+      text-align: center;
+      padding: 80px 10px;
+    }
+    .hero h1 {
+      font-size: 2.4rem;
+    }
+    .price {
+      color: #00ff9c;
+      font-weight: bold;
+      font-size: 1.3rem;
+      margin: 15px 0px;
+    }
+     .gambar {
+      width: 300px;
+      height: auto;
+     }
+    .cta {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 15px 30px;
+      background: #00ff9c;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 20px;
+    }
+    .features, .problem, .target .faq {
+      margin-top: 60px;
+      line-height: 1.5;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    .box {
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+    
+    .faq-item {
+      border-bottom: 1px solid #333;
+      padding: 15px 0;
+    }
+    .faq-question {
+      cursor: pointer;
+      font-weight: bold;
+      position: relative;
+    }
+    .faq-question::after {
+      content: "+";
+      position: absolute;
+      right: 0;
+      transition: transform 0.3s;
+    }
+    .faq-item.active .faq-question::after {
+      content: "-";
+    }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+      opacity: 0.8;
+      margin-top: 10px;
+    }
+     .active .faq-answer {
+      max-height: 200px;
+    }
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.6s ease;
+    }
+    .reveal .active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .final-cta {
+      text-align: center;
+      padding: 50px 20px;
+      border-radius: 20px;
+      background: #00ff9c;
+      color: #000;
+      margin-top: 80px;
+    }
+    .final-cta-a {
+     display: inline-block; 
+     margin-top: 25px;
+     padding: 15px 10px;
+     background: #000;
+     color: #fff;
+     text-decoration: none;
+     border-radius: 20px;
+     font-weight: bold;
+    }
+    footer{
+      text-align: center;
+      font-size: 0.9rem;
+      opacity: 0.7;
+      padding: 30px;
+    }
+  </style>
+ </head>
+ <body>
+   <!--HERO-->
+   <section class="hero section hidden">
+   <h1>Naikkan Omset Bisnismu Hingga 100x Lipat Dengan Landingpage
+   </h1>
+   <p class="price"> hanya 100 ribu - langsung online </p>
+   <img src="img/images.png" alt="Foto saya" class="gambar">
+   <p>cocok untuk UMKM, pebisnis, konten creator, & freelancer<br>
+   mau jualan, promosi, atau bangun personal brand - tanpa ribet dan tanpa mahal
+   </p>
+   
+   <a href="https://wa.me/6285624261831?text=halo20%saya%tertarik%pesan%landingpagenya"
+   class="cta"target"blank">
    🔥 Pesan Sekarang
-       <span class="cta-arrow">➜</span> 
+   </a>
+   <a href="https://wa.me/6285624261831?text=halo20%saya20%mau20%konsultasi20%"
+   class="cta"target"blank">
+   👉 Konsultasi Gratis
+   </a>
+   
+   <p style="margin-top:20px;">
+    ⚡ Proses cepat | 💻 Berbasis web |  📱 Mobile friendly
+   </p>
+   </section>
+   <div class="container">
+     <!-- PROBLEM -->
+     <section class="problem section hidden"> 
+     <h2>Punya Produk / Jasa, Tapi Online-nya Gitu-Gitu Aja?</h2>
+     <ul>
+       <li>Jualan cuma lewat Whatsapp & IG bio </li>
+       <li>Calon klien nanya terus tapi nggak jadi</li>
+       <li>Website mahal,ribet dan kebanyakan fitur nggak kepakai</li>
+       <li>Mau terlihat profesional tapi budget terbatas</li>
+     </ul>
+     <div class="box">
+       <strong>Landing page yang tepat bisa jadi pembeda</strong><br>antara ditanya doang dan dibayar beneran<br>
+       
+       Dengan <strong>300 ribu</strong>,kamu dapat landingpage profesional dengan fokus convert,bukan cuma kelihatan "estetik"
+     </div>
+     </section>
+     <!--FEATURES-->
+     <section class="features section hidden">
+       <h2>Apa yang kamu dapat</h2>
+       <ul>
+         <li>✅ landing page siap jual / promosi</li>
+         <li>✅ Desain rapi dan profesional</li>
+         <li>✅ Mobile friendly</li>
+         <li>✅ Struktur fokus konversi</li>
+         <li>✅ Langsung online (tinggal share link)</li>
+         <li>✅ cocok untuk iklan,bio IG dan WA busines</li>
+       </ul>
+       <p style="opacity: 0.8;">
+         Tanpa biaya aneh-aneh,Tanpa langganan tersembunyi<br>
+         Hidup sudah cukup berat
+       </p>
+       </section>
+       <br>
+       <!--TARGET-->
+       <section class="target section hidden">
+         <h2>Landingpage ini cocok untuk</h2>
+         <ul>
+           <li>🏪 UMKM dan pebisnis online</li>
+           <li>🎥 Konten kreator & personal brand</li>
+           <li>💼 Freelancer & jasa profesional</li>
+           <li>🚀 Produk digital / jasa online</li>
+         </ul>
+       </section>
+       <br>
+       <!-- FAQ -->
+       <section class="faq section hidden">
+         <h2>Pertanyaan Umum</h2>
+         <div class="faq-item">
+           <div class="faq-question">
+           Q: Beneran cuma 100 ribu?
+           </div>
+           <div class="faq-answer">
+           A: Iya, Fokus landing page simpel, efektif, dan cepat.
+           </div>
+          </div>
+          <div class="faq-item">
+           <div class="faq-question">
+             Q: Bisa custom?
+             </div>
+             <div class="faq-answer">
+           A: Bisa, selama masih masuk akal dan bukan bikin marketplace.
+           </div>
+           </div>
+           <div class="faq-item">
+           <div class="faq-question">
+             Q: Berapa lama jadi?</div>
+           <div class="faq-answer">
+             A: Rata-rata cepat, tergantung kelengkapan data
+             </div>
+             </div>
+             <div class="faq-item">
+           <div class="faq-question">
+           Q: Bisa dipakai buat iklan?</div>
+           <div class="faq-answer">
+             A: Justru itu tujuannya
+           </div>
+           </div>
+       </section>
+       <!--FINAL CTA-->
+       <section class="final-cta section hidden">
+         <h2>Jangan Tunggu "Nanti", Online Sekarang Lebih Penting</h2>
+         <p><strong>Hanya 100 Ribu • Langsung Online</strong></p>
+        <a href="https://wa.me/6281234567890?text=Halo%20saya%20ingin%20pesan%20landing%20page%20profesional"class="final-cta-a" 
+   target"_blank">🚀 Pesan Landing Page Sekarang
         </a>
+          <p style="margin-top:15px;font-size:0.9rem;">Cocok buat yang mau jualan, bukan yang sekadar tampil keren.
+         </p>
+       </section>
+       <footer>
+         © 2026 Naiklevelidn
+       </footer>
+<script>const sections = document.querySelectorAll('.section');
 
-        <p style="margin-top:20px;">
-            ⚡ Proses cepat | 💻 Berbasis web | 📱 Mobile friendly
-        </p>
-    </section>
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+});
 
-    <div class="container">
-
-        <!-- PROBLEM -->
-        <section class="problem reveal">
-            <h2>Punya Produk / Jasa, Tapi Online-nya Gitu-Gitu Aja?</h2>
-            <ul>
-                <li>Jualan cuma lewat WhatsApp & IG bio</li>
-                <li>Calon klien nanya terus tapi nggak jadi</li>
-                <li>Website mahal, ribet, dan kebanyakan fitur nggak kepakai</li>
-                <li>Mau terlihat profesional tapi budget terbatas</li>
-            </ul>
-
-            <div class="box">
-                <strong>Landing page yang tepat bisa jadi pembeda</strong><br>
-                Antara ditanya doang dan dibayar beneran.<br><br>
-                Dengan <strong>100 ribu</strong>, kamu dapat landing page profesional yang fokus convert,
-                bukan cuma kelihatan “estetik”.
-            </div>
-        </section>
-
-        <!-- FEATURES -->
-        <section class="features reveal">
-            <h2>Apa yang Kamu Dapat</h2>
-            <ul>
-                <li>✅ Landing page siap jual / promosi</li>
-                <li>✅ Desain rapi & profesional</li>
-                <li>✅ Mobile friendly</li>
-                <li>✅ Struktur fokus konversi</li>
-                <li>✅ Langsung online (tinggal share link)</li>
-                <li>✅ Cocok untuk iklan, bio IG, WA bisnis</li>
-            </ul>
-
-            <p style="opacity:0.8;">
-                Tanpa biaya aneh-aneh. Tanpa langganan tersembunyi.<br>
-                Hidup sudah cukup berat.
-            </p>
-        </section>
-
-        <!-- TARGET -->
-        <section class="target reveal">
-            <h2>Landing Page Ini Cocok Untuk</h2>
-            <ul>
-                <li>🏪 UMKM & pebisnis online</li>
-                <li>🎥 Konten kreator & personal brand</li>
-                <li>💼 Freelancer & jasa profesional</li>
-                <li>🚀 Produk digital / jasa online</li>
-            </ul>
-        </section>
-
-        <!-- FAQ -->
-        <section class="faq reveal">
-    <h2>Pertanyaan Umum</h2>
-
-    <div class="faq-item">
-        <div class="faq-question">
-            Q: Beneran cuma 100 ribu?
-        </div>
-        <div class="faq-answer">
-            Iya. Fokus landing page simpel, efektif, dan cepat.
-        </div>
-    </div>
-
-    <div class="faq-item">
-        <div class="faq-question">
-            Q: Bisa custom?
-        </div>
-        <div class="faq-answer">
-            Bisa, selama masih masuk akal dan bukan bikin marketplace.
-        </div>
-    </div>
-
-    <div class="faq-item">
-        <div class="faq-question">
-            Q: Berapa lama jadi?
-        </div>
-        <div class="faq-answer">
-            Rata-rata cepat, tergantung kelengkapan data.
-        </div>
-    </div>
-
-        </section>
-
-    </div>
-
-    <!-- FINAL CTA -->
-    <section class="final-cta reveal" id="pesan">
-        <h2>Jangan Tunggu “Nanti”, Online Sekarang Lebih Penting</h2>
-        <p><strong>Hanya 100 Ribu • Langsung Online</strong></p>
-        <a href="https://wa.me/6285624261831?text=Halo%20saya%20ingin%20pesan%20landing%20page%20profesional" 
-   target="_blank">
-   🚀 Pesan Landing Page Sekarang
-        </a>
-        <p style="margin-top:15px;font-size:0.9rem;">
-            Cocok buat yang mau jualan, bukan sekadar tampil keren.
-        </p>
-    </section>
-
-    <footer>
-        © 2026 Solodeveloperidn
-    </footer>
-<script>
-const reveals = document.querySelectorAll(".reveal");
-
-function revealOnScroll() {
-    reveals.forEach(el => {
-        const windowHeight = window.innerHeight;
-        const elementTop = el.getBoundingClientRect().top;
-
-        if (elementTop < windowHeight - 100) {
-            el.classList.add("active");
-        }
-    });
-}
-
-window.addEventListener("scroll", revealOnScroll);
+sections.forEach(section => {
+  observer.observe(section);
+});</script>
             </script>
    <script>
 const faqItems = document.querySelectorAll(".faq-item");
@@ -326,4 +284,6 @@ faqItems.forEach(item => {
 });
 </script> 
 </body>
-</html>
+ 
+ </html>
+ 
